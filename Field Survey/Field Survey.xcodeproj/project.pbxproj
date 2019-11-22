@@ -14,6 +14,9 @@
 		F8E9B4342388557500596962 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8E9B4322388557500596962 /* LaunchScreen.storyboard */; };
 		F8E9B43F2388557500596962 /* Field_SurveyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9B43E2388557500596962 /* Field_SurveyTests.swift */; };
 		F8E9B44A2388557500596962 /* Field_SurveyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9B4492388557500596962 /* Field_SurveyUITests.swift */; };
+		F8E9B45C23885E5200596962 /* field_observations.json in Resources */ = {isa = PBXBuildFile; fileRef = F8E9B45B23885E5200596962 /* field_observations.json */; };
+		F8E9B46023885FDE00596962 /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9B45F23885FDE00596962 /* Classification.swift */; };
+		F8E9B4622388613200596962 /* Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9B4612388613200596962 /* Observation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		F8E9B4452388557500596962 /* Field SurveyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Field SurveyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8E9B4492388557500596962 /* Field_SurveyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field_SurveyUITests.swift; sourceTree = "<group>"; };
 		F8E9B44B2388557500596962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8E9B45B23885E5200596962 /* field_observations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = field_observations.json; sourceTree = "<group>"; };
+		F8E9B45F23885FDE00596962 /* Classification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classification.swift; sourceTree = "<group>"; };
+		F8E9B4612388613200596962 /* Observation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 		F8E9B4262388557400596962 /* Field Survey */ = {
 			isa = PBXGroup;
 			children = (
+				F8E9B45823885D9600596962 /* Model */,
 				F8E9B4272388557400596962 /* AppDelegate.swift */,
 				F8E9B4292388557400596962 /* SceneDelegate.swift */,
 				F8E9B42D2388557400596962 /* Main.storyboard */,
@@ -123,6 +130,16 @@
 				F8E9B44B2388557500596962 /* Info.plist */,
 			);
 			path = "Field SurveyUITests";
+			sourceTree = "<group>";
+		};
+		F8E9B45823885D9600596962 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8E9B45B23885E5200596962 /* field_observations.json */,
+				F8E9B45F23885FDE00596962 /* Classification.swift */,
+				F8E9B4612388613200596962 /* Observation.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8E9B4342388557500596962 /* LaunchScreen.storyboard in Resources */,
+				F8E9B45C23885E5200596962 /* field_observations.json in Resources */,
 				F8E9B4312388557500596962 /* Assets.xcassets in Resources */,
 				F8E9B42F2388557400596962 /* Main.storyboard in Resources */,
 			);
@@ -256,8 +274,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8E9B4622388613200596962 /* Observation.swift in Sources */,
 				F8E9B4282388557400596962 /* AppDelegate.swift in Sources */,
 				F8E9B42A2388557400596962 /* SceneDelegate.swift in Sources */,
+				F8E9B46023885FDE00596962 /* Classification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
