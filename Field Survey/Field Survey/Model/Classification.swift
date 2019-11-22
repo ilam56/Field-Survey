@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum Classification: String {
+enum Classification: String, Codable {
     case amphibian
     case bird
     case insect
@@ -17,5 +17,7 @@ enum Classification: String {
     case reptile
     case fish
     
-    
+    var image: UIImage? {
+        return UIImage(named: self.rawValue + "Icon")
+    }
 }

@@ -8,6 +8,17 @@
 
 import Foundation
 
+struct ObservationCollection: Codable {
+    var status: String
+    var observations: [Observation]
+    
+    enum CodingKeys: String, CodingKey {
+        case status
+        case observations
+    }
+}
+
+
 struct Observation : Codable {
     var classification: Classification
     var title: String
