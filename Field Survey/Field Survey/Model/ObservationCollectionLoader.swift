@@ -12,18 +12,11 @@ class ObservationCollectionLoader {
     class func load(jsonFileName: String) -> ObservationCollection? {
         var observationCollection: ObservationCollection?
         let jsonDecoder = JSONDecoder()
+        jsonDecoder.dateDecodingStrategy = .iso8601
         
         if let jsonFileUrl = Bundle.main.url(forResource: jsonFileName, withExtension: ".json"),
            let jsonData = try? Data(contentsOf: jsonFileUrl) {
-            print("line 18")
-            do{
-                observationCollection = try jsonDecoder.decode(ObservationCollection.self, from: jsonData)
-            } catch {
-                print(error)
-            }
-            print(observationCollection)
-        } else{
-            print("else")
+                observationCollection = try? jsonDecoder.decode(ObservationCollection.self, from: jsonData)
         }
         
         return observationCollection

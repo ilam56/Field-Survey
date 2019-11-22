@@ -19,6 +19,8 @@
 		F8E9B4622388613200596962 /* ObservationCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9B4612388613200596962 /* ObservationCollection.swift */; };
 		F8E9B46423886F3900596962 /* ObservationCollectionLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9B46323886F3900596962 /* ObservationCollectionLoader.swift */; };
 		F8E9B4662388718E00596962 /* ObservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9B4652388718E00596962 /* ObservationViewController.swift */; };
+		F8E9B46823887B7200596962 /* ObservationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9B46723887B7200596962 /* ObservationDetailViewController.swift */; };
+		F8E9B46A238885A400596962 /* observationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E9B469238885A400596962 /* observationTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		F8E9B4612388613200596962 /* ObservationCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationCollection.swift; sourceTree = "<group>"; };
 		F8E9B46323886F3900596962 /* ObservationCollectionLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationCollectionLoader.swift; sourceTree = "<group>"; };
 		F8E9B4652388718E00596962 /* ObservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationViewController.swift; sourceTree = "<group>"; };
+		F8E9B46723887B7200596962 /* ObservationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationDetailViewController.swift; sourceTree = "<group>"; };
+		F8E9B469238885A400596962 /* observationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = observationTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				F8E9B4322388557500596962 /* LaunchScreen.storyboard */,
 				F8E9B4352388557500596962 /* Info.plist */,
 				F8E9B4652388718E00596962 /* ObservationViewController.swift */,
+				F8E9B46723887B7200596962 /* ObservationDetailViewController.swift */,
+				F8E9B469238885A400596962 /* observationTableViewCell.swift */,
 			);
 			path = "Field Survey";
 			sourceTree = "<group>";
@@ -280,6 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8E9B46A238885A400596962 /* observationTableViewCell.swift in Sources */,
+				F8E9B46823887B7200596962 /* ObservationDetailViewController.swift in Sources */,
 				F8E9B4622388613200596962 /* ObservationCollection.swift in Sources */,
 				F8E9B4662388718E00596962 /* ObservationViewController.swift in Sources */,
 				F8E9B4282388557400596962 /* AppDelegate.swift in Sources */,
